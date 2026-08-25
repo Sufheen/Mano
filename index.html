@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Maheen ♥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+</head>
+<body>
+
+<!-- floating background hearts get injected here -->
+<div class="sky" id="sky" aria-hidden="true"></div>
+
+<!-- ─────────────── HERO ─────────────── -->
+<header class="hero">
+  <h1 class="name" id="name" aria-label="Maheen">
+    <span class="name-glow" aria-hidden="true"></span>
+    <span class="heart-accent" aria-hidden="true">♥</span>
+    <span class="letter" style="animation-delay:.05s">M</span><span class="letter" style="animation-delay:.12s">a</span><span class="letter" style="animation-delay:.19s">h</span><span class="letter" style="animation-delay:.26s">e</span><span class="letter" style="animation-delay:.33s">e</span><span class="letter" style="animation-delay:.40s">n</span>
+    <span class="heart-accent" aria-hidden="true">♥</span>
+  </h1>
+
+  <div class="blob-row" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <a class="scroll-cue" href="#gallery">
+    <span>my favorite pictures of you</span>
+    <span class="arrow">↓</span>
+  </a>
+</header>
+
+<!-- ─────────────── GALLERY ─────────────── -->
+<section class="gallery-section" id="gallery">
+  <h2 class="section-title">my favorite pictures of you <span class="wiggle">📸</span></h2>
+  <p class="section-sub">click any photo to make it big</p>
+
+  <div class="gallery" id="galleryGrid">
+    <!-- photo cards are built by script.js -->
+  </div>
+</section>
+
+<!-- ─────────────── FOOTER ─────────────── -->
+<footer class="footer">
+  <div class="beat" aria-hidden="true">💗</div>
+  <p class="script-tag">yours, completely</p>
+  <p>made with love, and slightly too much CSS</p>
+  <p class="tiny">for you, always <span id="year"></span></p>
+</footer>
+
+<!-- ─────────────── LIGHTBOX ─────────────── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Close">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Previous photo">‹</button>
+  <figure class="lb-figure">
+    <img id="lbImg" alt="">
+  </figure>
+  <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Next photo">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
